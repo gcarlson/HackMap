@@ -1,0 +1,191 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3.5">
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.gcarl.hackmap.MapsActivity" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:id="@+id/tracking"
+            android:text="Tracking"
+            android:textSize="9pt"
+            android:textColor="#000"
+            android:textAlignment="center"/>
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signal"
+            android:text="|||||"
+            android:textSize="9pt"
+            android:textColor="#000"
+            android:layout_gravity="end"
+            android:textAlignment="textEnd"/>
+        />
+    </FrameLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        android:orientation="vertical"
+        android:gravity="top"
+        android:background="#000"
+        android:textAlignment="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/clock"
+            android:text="Time Is Here"
+            android:textSize="9pt"
+            android:textColor="#FFF"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="9pt"
+            android:text="Heading: 999"
+            android:id="@+id/heading"
+            android:textColor="#FFF"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="9pt"
+            android:text="999 999 N"
+            android:id="@+id/lat"
+            android:textColor="#FFF"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="9pt"
+            android:text="999 999 E"
+            android:id="@+id/lon"
+            android:textColor="#FFF"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="9pt"
+            android:text="1.0000 atm"
+            android:id="@+id/pressure"
+            android:textColor="#FFF"
+            android:textAlignment="center"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#8FF"
+            android:id="@+id/markbutton"
+            android:textAlignment="center"
+            android:text="Mark"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#888"
+            android:id="@+id/trackbutton"
+            android:textAlignment="center"
+            android:text="Tracking"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#8F8"
+            android:id="@+id/zoominbutton"
+            android:textAlignment="center"
+            android:text="Zoom In"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#88F"
+            android:id="@+id/zoomoutbutton"
+            android:textAlignment="center"
+            android:text="Zoom Out"/>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:gravity="top"
+            android:background="#000"
+            android:textAlignment="center">
+
+            <Button
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="#FFF"
+                android:id="@+id/leftbutton"
+                android:textAlignment="center"
+                android:text="K"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFF"
+                android:id="@+id/upbutton"
+                android:textAlignment="center"
+                android:text="^"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFF"
+                android:id="@+id/downbutton"
+                android:textAlignment="center"
+                android:text="v"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFF"
+                android:id="@+id/rightbutton"
+                android:textAlignment="center"
+                android:text=">"/>
+            </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
